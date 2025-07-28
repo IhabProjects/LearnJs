@@ -86,3 +86,20 @@ if (score >= 95) {
 let grade = score >= 90 ? "A" : "B";
 consple.log("Ternary grade:", grade);
 
+console.log("=== LOOPS ===");
+
+// For loop (different from Python's for-in)
+console.log("For-of loop (like Python for-in)")
+for (let fruit of fruits) {
+  console.log("Fruit:", fruit);
+
+// For-in Loop (iterates over Objects keys)
+console.log("For-in loop (object keys):");
+for (let key in person) {
+    console.log(`${key}: ${person[key]`);
+  }
+
+// While loop (same as Python)
+console.log("While loop:");
+let count = 0;
+
