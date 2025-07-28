@@ -81,3 +81,8 @@ if (score >= 95) {
 } else {
   console.log("Grade: F");
 }
+
+// Ternary opeator (Python equivalent: "A" if score >= 90 else "B")
+let grade = score >= 90 ? "A" : "B";
+consple.log("Ternary grade:", grade);
+
