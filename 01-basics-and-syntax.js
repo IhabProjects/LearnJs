@@ -91,15 +91,40 @@ console.log("=== LOOPS ===");
 // For loop (different from Python's for-in)
 console.log("For-of loop (like Python for-in)")
 for (let fruit of fruits) {
-  console.log("Fruit:", fruit);
-
+  console.log("Fruit:", fruit);}
 // For-in Loop (iterates over Objects keys)
 console.log("For-in loop (object keys):");
 for (let key in person) {
-    console.log(`${key}: ${person[key]`);
-  }
+    console.log(`${key}: ${person[key]}`);
+    }
+ // while loop (same as python)
 
-// While loop (same as Python)
-console.log("While loop:");
+console.log("While Loop:");
 let count = 0;
+while (count < 3) {
+      console.log(`count: ${count}`);
+    count++;
+}
 
+console.log("=== FUNCTIONS ===");
+
+// Function declaation (different from python def)
+
+function greetUser(userName) {
+  return `Hello, ${userName}!`;
+}
+
+console.log(greetUser("Ihab"));
+
+// Arrow Function (modern Js similar to python lamnbda but more powerful)
+const multiply = (a, b) => a*b;
+console.log("5 * 3 =", multiply(5, 3))
+
+// function with default parametres (like python)
+
+function introduce(name, age = 18) {
+  return `I'm ${name} and I'm ${age} years old`;
+}
+
+console.log(introduce("Ihab"));
+console.log(introduce("Hamza", 20));
